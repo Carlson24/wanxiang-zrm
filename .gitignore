@@ -1,0 +1,10 @@
+build/*
+sync/*
+dicts/*
+**/*.userdb
+*.gram
+*.custom.yaml
+installation.yaml
+user.yaml
+user_abbrev.txt
+user_phrase.txt
