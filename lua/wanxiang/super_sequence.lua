@@ -586,9 +586,9 @@ function F.init(env)
     db_name = db_name:gsub("\\", "/"):gsub("^/+", "")
     while db_name:match("%.%./") do db_name = db_name:gsub("%.%./", "") end
     db_name = db_name:gsub("%./", "")
-    if db_name == "" then db_name = "lua/sequence" end
+    if db_name == "" then db_name = "userdatabase/sequence" end
   else
-    db_name = "lua/sequence"
+    db_name = "userdatabase/sequence"
   end
 
   if not seq_db then

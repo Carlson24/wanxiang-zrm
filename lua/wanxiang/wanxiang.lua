@@ -5,7 +5,7 @@ local wanxiang = {}
 
 -- x-release-please-start-version
 
-wanxiang.version = "v15.11.1"
+wanxiang.version = "v16.00.0"
 
 -- x-release-please-end
 
@@ -70,15 +70,6 @@ function wanxiang.is_mobile_device()
     is_mobile_device = _is_mobile_device()
   end
   return is_mobile_device
-end
-
---- 检测是否为万象专业版
----@param env Env
----@return boolean
-function wanxiang.is_pro_scheme(env)
-  -- local schema_name = env.engine.schema.schema_name
-  -- return schema_name:gsub("PRO$", "") ~= schema_name
-  return env.engine.schema.schema_id == ("wanxiang_zrm" or "wanxiang_flypy")
 end
 
 -- 以 `tag` 方式检测是否处于反查模式
